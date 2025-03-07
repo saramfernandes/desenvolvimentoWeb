@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(242, 235, 224);
+}
+table{
+    /* border-style: dashed; */
+    /* border-color: cadetblue; */
+    width: 100%;
+    background-color: rgb(201, 43, 43);
+    border-radius: 15px;
+}
+.titulo{
+    border-style: groove;
+    border-color: rgb(138, 3, 3);
+    background-color: rgb(201, 43, 43);
+    color: aliceblue;
+    border-width: 0px;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 30px;
+}
+td{
+    border-style: groove;
+    border-color: rgb(192, 1, 1);
+    background-color: rgb(226, 122, 122);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-width: 0px;
+    border-radius: 15px;
+    height: 50px;
+
+}
+td:hover{
+    color: white;
+    background-color: rgb(25, 127, 51);
+}
+td:active{
+    color: orange;
+    background-color: bisque;
+}
+.erro:hover{
+    color: white;
+    background-color: rgb(38, 0, 255);
+}
+a:link, a:visited{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h1{
+    font-size: 200px;
+    text-align: center;
+    color: rgb(138, 3, 3);
+}

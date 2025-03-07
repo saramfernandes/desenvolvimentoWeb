@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Recebe</title>
+</head>
+<body>
+    <span id="dados"></span>
+    <script>
+        let dados = '';
+        const params = new URLSearchParams(window.location.search);
+        const linhas = params.get("linhas");
+        const colunas = params.get("colunas");
+
+        dados += "<b>Tabela Criada: </b>";
+        
+        for (let i = 0; i < linhas; i++) {
+
+        }
+        for (let i = 0; i < colunas; i++) {
+
+        }
+    
+        // if(pagamento.length > 0) {
+        //       dados += "<ul>";
+        //     pagamento.forEach(pg =>{
+        //         dados += "<li>" + pg + "</li>";
+        //     })
+        //     dados += "</ul>"
+        // } else{
+        //     dados += "Nenhum meio de pagamento selecionado";
+        // }
+
+        document.getElementById("dados").innerHTML  = dados;      
+    </script>
+</body>
+</html>

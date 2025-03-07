@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Recebe</title>
+</head>
+<body>
+    <h1>Recebeu <span id="nomeRecebido2"></span> <span id="nomeRecebido"></span></h1>
+
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const nome = params.get("produto");    
+        if (nome) {
+            document.getElementById("nomeRecebido").textContent = decodeURIComponent(nome);
+        } else {
+            document.getElementById("nomeRecebido").textContent = "Nenhum produto recebido.";
+        }
+        
+        const params2 = new URLSearchParams(window.location.search);
+        const nome2 = params.get("quantidade");    
+        if (nome) {
+            document.getElementById("nomeRecebido2").textContent = decodeURIComponent(nome2);
+        } else {
+            document.getElementById("nomeRecebido2").textContent = "Nenhum produto recebido.";
+        }
+
+       
+    </script>
+</body>
+</html>
