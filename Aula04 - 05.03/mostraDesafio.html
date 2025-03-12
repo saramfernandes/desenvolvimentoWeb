@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Recebe</title>
+    <title>Mostra Tabela</title>
 </head>
 <body>
     <span id="dados"></span>
@@ -12,24 +12,18 @@
         const linhas = params.get("linhas");
         const colunas = params.get("colunas");
 
-        dados += "<b>Tabela Criada: </b>";
-        
+        dados += "<b>Tabela Criada: </b><br>";
+        dados += "<table border=" + "2px" + " width=" + "50%" + ">";
+                
         for (let i = 0; i < linhas; i++) {
-
+            dados += "<tr>";
+                for (let i = 0; i < colunas; i++) {
+                    dados += "<td> . </td>";
+                }
+            dados += "</tr>"
         }
-        for (let i = 0; i < colunas; i++) {
 
-        }
-    
-        // if(pagamento.length > 0) {
-        //       dados += "<ul>";
-        //     pagamento.forEach(pg =>{
-        //         dados += "<li>" + pg + "</li>";
-        //     })
-        //     dados += "</ul>"
-        // } else{
-        //     dados += "Nenhum meio de pagamento selecionado";
-        // }
+        dados += "</table>";
 
         document.getElementById("dados").innerHTML  = dados;      
     </script>
