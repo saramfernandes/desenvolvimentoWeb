@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+
+    <style>
+        .destaque {
+            color: white;
+            background-color: blue;
+            padding: 5px;
+        }
+        .invisivel {
+            display: none;
+        }
+
+        li {
+            background-color: goldenrod;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+        }
+    </style>
+    <script src="../Scripts/domJS.js"></script>
+
+</head>
+<body>
+    <h1 id="titulo">Título Original</h1>
+    <p id="paragrafo">Esse é um texto de exemplo.</p>
+
+    <input type="text" id="campoTexto" value="Valor inicial">
+    <button onclick="alterarConteudo()">Alterar Conteúdo</button>
+    <button onclick="alterarAtributos()">Alterar Atributos</button>
+    <button onclick="alternarClasse()">Alternar Classe</button>
+    <button onclick="limparInput()">Limpar Input</button>
+    <br><br>
+    <hr>
+    <br>
+
+    <h1>Lista de Itens Dinâmica</h1>
+    <input type="text" id="novoItem" placeholder="Digite um item">
+    <button onclick="adicionarItem()">Adicionar Item</button>
+
+    <ul id="lista"></ul>
+
+</body>
+</html>

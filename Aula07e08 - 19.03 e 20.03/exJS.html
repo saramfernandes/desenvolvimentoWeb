@@ -3,15 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Exemplo JavaScript</title>
+
+    <style>
+        .highlight {
+            background-color: burlywood;
+        }
+    </style>
+
+
 </head>
 <body> 
+
+    <!-- 
+    
+    --------- Do dia 19.03:
+
     <button onclick="funcao01()">Clique-me</button><br><br>
 
-    <input type="radio" name="fnc" onchange="escolheFnc()"> Função anônima 01 <br>
+   <input type="radio" name="fnc" onchange="escolheFnc()"> Função anônima 01 <br>
     <input type="radio" name="fnc" onchange="escolheFnc()"> Função anônima 02 <br>
 
     <br>
-    <button id="bt02">Clique-me</button>
+    <button id="bt02">Clique-me</button> <br> <br>
+
+    -->
+
+    <form id="form">
+        <label for="numero1">Número 1:</label>
+        <input type="number" name="numero1" id="numero1" required>
+        <br>
+        <br>
+        <input type="radio" name="fnc" onchange="escolheFnc2()"> + <br>
+        <input type="radio" name="fnc" onchange="escolheFnc2()"> - <br>
+        <input type="radio" name="fnc" onchange="escolheFnc2()"> * <br>
+        <input type="radio" name="fnc" onchange="escolheFnc2()"> / <br>
+        <br>
+        <label for="numero2">Número 2:</label>
+        <input type="number" name="numero2" id="numero2" required>
+        <br> <br>
+        <button type="button" id="bt03">Calcular Soma</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <br><br><br>
+
+    <input type="text" name="nome" id="nome" onkeydown="capturaTecla(event)">
+
+    <h1 id="titulo">Título Principal</h1>
+    <p class="paragrafo">Este é o primeiro parágrafo</p>
+    <p class="paragrafo">Este é o segundo parágrafo</p>
+    <p class="paragrafo">Este é o terceiro parágrafo</p>
+    <button id="botao" onclick="alterarConteudo()">Clique aqui</button>
+
+    <br><br><br>
+
+    
+
+
 
     <script src="../Scripts/htmlejsaula07.js"></script>
 </body>
